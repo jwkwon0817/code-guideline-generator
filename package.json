@@ -6,6 +6,11 @@
   "bin": {
     "code-guideline": "./dist/index.js"
   },
+  "keywords": [
+    "code",
+    "guideline",
+    "generator"
+  ],
   "scripts": {
     "build": "tsc",
     "dev": "tsx watch src/index.ts",
@@ -18,9 +23,16 @@
     "README.md",
     "LICENSE"
   ],
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "author": {
+    "name": "Jeewon Kwon",
+    "email": "jeewon.kwon.0817@gmail.com",
+    "url": "https://github.com/jwkwon0817"
+  },
+  "repository": {
+    "url": "https://github.com/jwkwon0817/code-guideline-generator",
+    "type": "git"
+  },
+  "license": "MIT",
   "packageManager": "pnpm@10.7.1",
   "dependencies": {
     "chalk": "^5.4.1",
