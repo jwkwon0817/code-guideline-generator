@@ -1,6 +1,6 @@
 {
   "name": "code-guideline",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "Code Guideline Generator",
   "type": "module",
   "bin": {
