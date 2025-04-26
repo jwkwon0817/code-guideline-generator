@@ -1,0 +1,33 @@
+{
+  "name": "code-guideline",
+  "version": "0.0.1",
+  "description": "Code Guideline Generator",
+  "type": "module",
+  "bin": {
+    "init": "./dist/index.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsx watch index.ts",
+    "start": "tsx index.ts",
+    "prepare": "pnpm run build",
+    "lint": "biome check --fix"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "packageManager": "pnpm@10.7.1",
+  "dependencies": {
+    "chalk": "^5.4.1",
+    "commander": "^13.1.0",
+    "inquirer": "^12.6.0",
+    "lodash": "^4.17.21"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "^1.9.4",
+    "@types/lodash": "^4.17.16",
+    "@types/node": "^22.15.2",
+    "tsx": "^4.19.3",
+    "typescript": "^5.8.3"
+  }
+}
