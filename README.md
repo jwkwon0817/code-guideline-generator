@@ -11,7 +11,7 @@
 You can run it directly without installing globally:
 
 ```bash
-npx code-guideline init
+npx @code-guideline/biomejs init
 ```
 
 (Ensure you have Node.js installed.)
@@ -19,7 +19,7 @@ npx code-guideline init
 ## 📖 Usage
 
 ```bash
-npx code-guideline init
+npx @code-guideline/biomejs init
 ```
 
 This will:

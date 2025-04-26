@@ -1,10 +1,10 @@
 {
-  "name": "code-guideline",
+  "name": "@code-guideline/biomejs",
   "version": "0.0.5",
-  "description": "Code Guideline Generator",
+  "description": "Code Guideline Generator using BiomeJS",
   "type": "module",
   "bin": {
-    "code-guideline": "./dist/index.js"
+    "@code-guideline/biomejs": "./dist/index.js"
   },
   "keywords": [
     "code",
