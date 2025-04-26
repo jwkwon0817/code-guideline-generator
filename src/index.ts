@@ -1,5 +1,3 @@
-#!/usr/bin/env node
-
 import { Command } from 'commander';
 import { installDependencies } from "./utils/install";
 import Logger from "./utils/logger";

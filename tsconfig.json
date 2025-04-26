@@ -6,10 +6,6 @@
     "module": "ESNext",
     "moduleResolution": "Node",
     "esModuleInterop": true,
-    "forceConsistentCasingInFileNames": true,
-    "skipLibCheck": true,
-    "strict": true,
-    "declaration": true
   },
   "include": ["**/*.ts"],
   "exclude": ["node_modules", "dist"]

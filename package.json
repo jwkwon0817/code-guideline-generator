@@ -1,6 +1,6 @@
 {
   "name": "code-guideline",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "Code Guideline Generator",
   "type": "module",
   "bin": {
@@ -12,7 +12,7 @@
     "generator"
   ],
   "scripts": {
-    "build": "tsc",
+    "build": "tsup",
     "dev": "tsx watch src/index.ts",
     "start": "tsx src/index.ts",
     "prepare": "pnpm run build",
@@ -44,6 +44,7 @@
     "@biomejs/biome": "^1.9.4",
     "@types/lodash": "^4.17.16",
     "@types/node": "^22.15.2",
+    "tsup": "^8.4.0",
     "tsx": "^4.19.3",
     "typescript": "^5.8.3"
   }
