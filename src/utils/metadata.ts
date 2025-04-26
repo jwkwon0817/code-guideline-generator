@@ -1,5 +1,6 @@
 import fs from 'fs';
 import path from 'path';
+import Logger from './logger';
 
 export function getBiomeVersion(): string | null {
   try {
@@ -11,13 +12,25 @@ export function getBiomeVersion(): string | null {
 
     return version ? version.replace(/^[^\d]*/, '') : null;
   } catch (error) {
-    console.error('Failed to read package.json:', error);
+    Logger.error(`Failed to read package.json: ${error}`);
     return null;
   }
 }
 
 export function getBiomeSchemaUrl() {
   return `https://biomejs.dev/schemas/${getBiomeVersion()}/schema.json`
+}
+
+export function getPackageVersion(): string | null {
+  try {
+    const packageJsonPath = path.join(process.cwd(), 'package.json');
+    const packageJson = JSON.parse(fs.readFileSync(packageJsonPath, 'utf8'));
+
+    return packageJson.version;
+  } catch (error) {
+    Logger.error(`Failed to read package.json: ${error}`);
+    return null;
+  }
 }
 
 export function getDefaultConfiguration() {
