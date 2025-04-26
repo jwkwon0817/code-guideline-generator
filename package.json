@@ -3,6 +3,7 @@
   "version": "0.0.5",
   "description": "Code Guideline Generator using BiomeJS",
   "type": "module",
+  "private": false,
   "bin": {
     "@code-guideline/biomejs": "./dist/index.js"
   },
